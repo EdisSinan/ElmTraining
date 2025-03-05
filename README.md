@@ -55,4 +55,4 @@ This Elm Todo List App is designed to be a straightforward yet powerful tool for
 
 ## ✨ The beauty we talked about ✨
 
-![This was supposed to be the image of the site but probably 6 months have passed since the upload of the image...](https://i.ibb.co/tZfLGDn/image.png)
+![Image of the site](images/image.png)
