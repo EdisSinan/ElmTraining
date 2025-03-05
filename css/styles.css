@@ -1,0 +1,220 @@
+body {
+    font-family: 'Helvetica';
+    margin: 0;
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Helvetica';
+    background: linear-gradient(to bottom, #08071f, #151146);
+    color: wheat;
+    overflow: hidden;
+    width: 100%;
+    font-size: 20px;
+    position: relative; /* Add this line */
+}
+
+.app-title {
+    margin-top: 10px;
+    align-items: center;
+    text-align: center;
+    font-size: 35px;
+    background: linear-gradient(to right, #61dafb, #7b3ff2);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    position: fixed; 
+    top: 0; 
+    width: 100%;
+    z-index: 1000;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: row;
+    width: 45%;
+    position: fixed; 
+    top: 60px; 
+    background: linear-gradient(to bottom, #08071f, #151146);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.submit-button {
+    width: 20%;
+    background: linear-gradient(to bottom, #08071f, #151146);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    color:wheat;
+}
+
+.input-field {
+    text-align: center;
+    font-size: 16px;
+    height: 24px;
+    border-bottom: 1px solid #ccc;
+    border-radius: 2%;
+    width: 80%;
+    background-color: transparent;
+    color: wheat;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.empty-message {
+    text-align: center;
+    font-family: 'cursive';
+    font-size: 19px;
+    margin-top: 90px;
+}
+
+.todos-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 80px;
+}
+
+.todos-list {
+    font-family: 'cursive';
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 66%;
+    overflow-y: auto;
+    overflow-x: auto;
+    text-align: justify;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.todos-heading {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+}
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    list-style-type: none;
+    margin-bottom: 8px;
+    animation: fadeInFromTop 0.8s ease;
+}
+
+.todo-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.todo-checkbox {
+    height: 20px;
+    width: 20px;
+    padding-right: 10px;
+    cursor: cell;
+}
+
+.delete-icon {
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    padding-left: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    background: linear-gradient(to bottom, #151146, #08071f);
+    border: #110e3e;
+    border-radius: 2%;
+    height: 98vh;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    overflow: auto;
+
+}
+
+.editing-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+span{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    overflow-y: auto;
+    overflow-x: auto;
+    animation: fadeInFromRight 0.8s ease;
+}
+.edit-input {
+    background-color: transparent;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    color: wheat;
+    width: 60%;
+}
+
+.done-button,
+.edit-button {
+    background: transparent;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    margin-left: 10px;
+    height: 20px;
+    width: 20px;
+}
+
+@keyframes fadeInFromRight {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInFromTop {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .app-title {
+        font-size: 10px;
+    }
+
+    .input-container{
+        height: 25px;
+    }
+    .input-field{
+        height: 25px;
+    }
+    .empty-message{
+        font-size: 10px;
+    }
+    .todo-content{
+        font-size: 10px;
+    }
+}

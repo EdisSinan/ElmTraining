@@ -1,0 +1,17 @@
+{
+  "name": "homework5-edis-sinanovic",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@gitlab.com:edis.sinanovic/homework5-edis-sinanovic.git",
+  "author": "Edis <edis.sinanovic@fet.ba>",
+  "license": "MIT",
+  "dependencies": {
+    "elm": "^0.19.1-6",
+    "elm-format": "^0.8.7"
+  },
+  "scripts": {
+    "clean": "rm -rf node_modules elm-stuff build yarn-error.log",
+    "make": "elm make src/Main.elm --output=build/elm.js"
+  }
+
+}
